@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <title>Home | Anteneh Kassa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="bg-canvas"></canvas>
+    <nav>
+      <canvas id="bg-canvas"></canvas>
+      <div class="navdiv">
+        <div class="logo" data-lang="logo">Anteneh Kassa</div>
+        <div
+          class="hamburger-icon"
+          role="button"
+          aria-label="Toggle navigation"
+          onclick="toggleMenu()"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="home.html" data-lang="nav-home">Home</a></li>
+          <li><a href="about.html" data-lang="nav-about">About Me</a></li>
+          <li><a href="contact.html" data-lang="nav-contact">Contact</a></li>
+          <li>
+            <select
+              id="language-selector"
+              onchange="changeLanguage(this.value)"
+            >
+              <option value="en">English</option>
+              <option value="am">አማርኛ</option>
+            </select>
+          </li>
+          <li>
+            <button
+              class="theme-toggle"
+              onclick="toggleTheme()"
+              data-lang="theme-toggle"
+            >
+              Theme
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="profile-container">
+        <div class="profile-text">
+          <h1 class="title" data-lang="profile-title">Hello, I'm Anteneh</h1>
+          <p class="container" data-lang="profile-text"></p>
+          <p class="section-text" data-lang="profile-id">ID: GUR/01692/15</p>
+        </div>
+  <script>
+var typed = new Typed(".container", {
+            strings:["Web designer", "Computer Science Student"],
+            typeSpeed: 100,
+            Backspeed: 60,
+            loop: true,
+          });
+  </script> 
+        <div class="profile-image">
+          <img
+            src="images/Picsart_25-05-19_22-42-27-169.png"
+            alt="picture of Anteneh Kassa"
+          />
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p data-lang="footer-text">
+        Copyright © 2025 Anteneh Kassa (GUR/01692/15). All Rights Reserved.
+      </p>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

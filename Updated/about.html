@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Anteneh Kassa</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <canvas id="bg-canvas"></canvas>
+        <div class="navdiv">
+          <div class="logo" data-lang="logo">Anteneh Kassa</div>
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="nav-links">
+            <li><a href="home.html" data-lang="nav-home">Home</a></li>
+            <li><a href="about.html" data-lang="nav-about">About Me</a></li>
+            <li><a href="contact.html" data-lang="nav-contact">Contact</a></li>
+            <li>
+              <select
+                class="language-selector"
+                onchange="changeLanguage(this.value)"
+              >
+                <option value="en">English</option>
+                <option value="am">አማርኛ</option>
+              </select>
+            </li>
+            <li>
+              <button class="theme-toggle" onclick="toggleTheme()">
+                Theme
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h1 class="title" data-lang="about-title">About Me</h1>
+      <div class="about-details">
+        <p data-lang="about-text">
+          I am a dedicated 3rd-year Computer Science student at Gondar
+          University, passionate about leveraging technology to solve real-world
+          problems. My academic journey has equipped me with strong foundations
+          in programming, web development, and software engineering. I enjoy
+          exploring new technologies, contributing to open-source projects, and
+          building innovative solutions that make a difference. My goal is to
+          become a skilled software developer, specializing in web technologies
+          and cybersecurity.
+        </p>
+
+        <h2 data-lang="skills-title">Skills</h2>
+        <ul>
+          <li data-lang="skill-1">HTML, CSS, JavaScript</li>
+          <li data-lang="skill-2">C++, Java</li>
+        </ul>
+
+        <h2 data-lang="education-title">Education</h2>
+        <ul>
+          <li data-lang="education-1">
+            BSc in Computer Science, Gondar University, Expected Graduation:
+            2026
+          </li>
+          <li data-lang="education-2">
+            Certified in Web development Udacity EthioCoders Platform
+          </li>
+        </ul>
+        <img src="images/My Udacity Certificate.png" alt="Udacity" />
+        <h2 data-lang="courses-title">My Completed Courses</h2>
+        <ul>
+          <li data-lang="course-1">Advanced Database (SQL, Oracle)</li>
+          <li data-lang="course-2">Data Structure and Algorithm (C++)</li>
+          <li data-lang="course-3">Object-Oriented Programming (Java)</li>
+          <li data-lang="course-4">Data Communication and Networking</li>
+          <li data-lang="course-5">Computer Organization and Architecture</li>
+          <li data-lang="course-6">Operating System</li>
+          <li data-lang="course-7">Web Programming</li>
+        </ul>
+        <h2 data-lang="interests-title">Interests</h2>
+        <ul>
+          <li data-lang="interest-1">
+            Web development, open-source contributions, and learning new
+            programming languages and Cybersecurity
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <p data-lang="footer-text">
+        Copyright © 2025 Anteneh Kassa (GUR/01692/15). All Rights Reserved.
+      </p>
+    </footer>
+  </body>
+</html>
